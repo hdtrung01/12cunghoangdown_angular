@@ -1,3 +1,4 @@
+
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,5 +7,13 @@ import { Component } from '@angular/core';
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
+  private name: string;
+
   constructor() {}
+
+  public getNane() {
+    return this.name;
+  }
+  private set 
 }
+

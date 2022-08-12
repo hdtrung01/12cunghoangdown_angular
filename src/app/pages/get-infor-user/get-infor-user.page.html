@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>12 Cung Hoàng Đown</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label  position="floating">>Nhập tên đạo hữu:</ion-label>
+    <ion-input type="text" inputmode="text" ></ion-input>
+  </ion-item>
+<ion-datetime [(ngModel)]="time">
+  <span slot="title">Nhập ngày sinh của đạo hữu</span>
+</ion-datetime>
+  <ion-button (click)="getData()" routerLink="/explain-zodiac" color="primary">Xem kết quả</ion-button>
+
+</ion-content>
